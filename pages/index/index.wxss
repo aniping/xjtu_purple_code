@@ -1,0 +1,132 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.top_wrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* line-height: 300rpx; */
+  height: 350rpx;
+  width:750rpx;
+  background:rgb(110, 73, 185);
+}
+
+.userpic_wrap{
+  margin-left: 35rpx;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  height: 280rpx;
+  width:210rpx;
+  background:rgb(255, 255, 255);
+}
+
+.head_img{
+  height: 270rpx;
+  width:200rpx;
+}
+
+.user_info{
+  margin-left: 45rpx;
+  margin-top: 70rpx;
+  align-self: flex-start;
+  color: rgb(236, 233, 245);
+  line-height: 60rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_info_top{
+  display: flex;
+  flex-direction: row;
+}
+
+.name{
+  margin-left: 10rpx;
+}
+
+.grade{
+  margin-left: 20rpx;
+  font-size: 26rpx;
+}
+
+.title_time{
+  color: rgb(146,150,155);
+  font-size: 40rpx;
+  margin-left: 45rpx;
+  margin-top: 20rpx;
+}
+
+.time_wrap{
+  height: 140rpx;
+  padding-left: 45rpx;
+  /* background-color: rgb(110, 73, 185); */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.day{
+  font-size: 60rpx;
+  color: rgb(48,51,58);
+  line-height: 50rpx;
+  font-weight: bold;
+}
+.hour{
+  font-size: 70rpx;
+  margin-left: 45rpx;
+  color: rgb(48,51,58);
+  line-height: 50rpx;
+  font-weight: bold;
+}
+.register{
+  font-size: small;
+  margin-left: 45rpx;
+}
+.out_info{
+  height: 85rpx;
+  padding-left: 45rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 28rpx;
+}
+.to_yellow{
+  color: rgb(246,185,96);
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}
+
+.erma{
+  margin-left: 95rpx;
+  height: 560rpx;
+  width: 560rpx;
+}
+
+.end_info{
+  text-align: center;
+  font-size: 34rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  /* background-color: rgb(110, 73, 185); */
+}

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "交大校园码",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "tabBar": {
+    "color": "#92969B",
+    "selectedColor": "#73C4C8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "交大校园码",
+        "iconPath": "images/unselect_tabbar.png",
+        "selectedIconPath": "images/select_tabbar.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "返校申请",
+        "iconPath": "images/unselect_tabbar.png",
+        "selectedIconPath": "images/select_tabbar.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "外出申请",
+        "iconPath": "images/unselect_tabbar.png",
+        "selectedIconPath": "images/select_tabbar.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "转码申请",
+        "iconPath": "images/unselect_tabbar.png",
+        "selectedIconPath": "images/select_tabbar.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap44.json"
+}

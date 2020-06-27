@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top_wrap">
+    <view class="userpic_wrap">
+    <!-- {{userInfo.avatarUrl}} -->
+      <image src="/images/liu.jpg" class="head_img"></image>
+    </view>
+    <view class="user_info">
+      <view class="user_info_top"><view>3119305588</view><view class="name">刘东锦</view><view class="grade">研究生</view></view>
+      <view>电子与信息学部/杨良伟班</view>
+    </view>
+  </view>
+  <view>
+    <view class="title_time">当前时间：</view>
+    <view class="time_wrap">
+      <view  class="day">{{M}}月{{D}}日</view><view class="hour">{{hour}}:{{minute}}:{{second}}</view>
+    </view>
+    <view class="register">已于 2020-05-23 16:39:20 完成报到登记</view>
+    <view>
+      <view class="out_info">外出时间<view class="to_yellow">2020-05-23 08:00</view>至<view class="to_yellow">2020-08-31 22:00</view></view>
+    </view>
+    <image class="erma" src="/images/erweima.png"></image>
+    <view class="end_info">校园最安全，外出有风险</view>
+  </view>
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

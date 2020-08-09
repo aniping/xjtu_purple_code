@@ -1,0 +1,15 @@
+<!--pages/info.wxml-->
+<view class="container">
+  <view class="userpic_wrap" bindtap='changeAvatar'>
+    <view class="dianwo">点我换头像</view>
+    <image src='{{savedFilePath||"/images/moren.jpg"}}' class="head_img"></image>
+  </view>
+  <form bindsubmit="formSubmit">
+    <input type='text' value='{{putdata.name}}' name="stu_name" placeholder='请输入你的姓名'></input>
+    <input type='text' value='{{putdata.bankName}}' name="stu_no" placeholder='请输入你的学号'></input>
+    <input type='text' value='{{putdata.bankName}}' name="stu_pp" placeholder='请输入你的导员'></input>
+    <input type='text' value='{{putdata.xueyuan}}' name="stu_xue" placeholder='请输入你的学院'></input>
+    <button formType="submit">戳我戳我，保存信息</button>
+  </form>
+  <button type="primary" bindtap="printInfo">测试按钮</button>
+</view>

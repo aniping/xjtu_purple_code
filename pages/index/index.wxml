@@ -3,11 +3,15 @@
   <view class="top_wrap">
     <view class="userpic_wrap">
     <!-- {{userInfo.avatarUrl}} -->
-      <image src="/images/liu.jpg" class="head_img"></image>
+      <image src='{{savedFilePath||"/images/moren.jpg"}}' class="head_img"></image>
     </view>
     <view class="user_info">
-      <view class="user_info_top"><view>3119305588</view><view class="name">刘东锦</view><view class="grade">研究生</view></view>
-      <view>电子与信息学部/杨良伟班</view>
+      <view class="user_info_top">
+        <view>{{stu_no||"3119000000"}}</view>
+        <view class="name">{{stu_name||"Unknown"}}</view>
+        <view class="grade">研究生</view>
+      </view>
+      <view>{{stu_xue||"电子与信息学部"}}/{{stu_pp||"杨良伟"}}班</view>
     </view>
   </view>
   <view>

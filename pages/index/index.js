@@ -7,7 +7,11 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    savedFilePath: "",
+    stu_name: "",
+    stu_no: "",
+    stu_pp: ""
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,6 +20,7 @@ Page({
     })
   },
   onLoad: function () {
+    this.getMyInfo();
 
     if (app.globalData.userInfo) {
       this.setData({
@@ -45,6 +50,23 @@ Page({
     }
     this.countDown();
   },
+
+  getMyInfo: function(){
+    let savedFilePath = wx.getStorageSync('head_pic')
+    let stu_name = wx.getStorageSync('stu_name')
+    let stu_no = wx.getStorageSync('stu_no')
+    let stu_pp = wx.getStorageSync('stu_pp')
+    let stu_xue = wx.getStorageSync('stu_xue')
+    this.setData({
+      savedFilePath: savedFilePath,
+      stu_name: stu_name,
+      stu_no: stu_no,
+      stu_pp: stu_pp,
+      stu_xue: stu_xue
+    });
+  },
+
+
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -53,6 +75,15 @@ Page({
       hasUserInfo: true
     })
   },
+
+  onPullDownRefresh() {
+    // 上拉刷新
+    if (!this.loading) {
+      this.getMyInfo();
+      wx.stopPullDownRefresh()
+    }
+  },
+
   countDown:function(){
     var timestamp = Date.parse(new Date());
     var date = new Date(timestamp);
@@ -70,4 +101,6 @@ Page({
     });
     setTimeout(this.countDown, 1000);
   }
+
+  
 })

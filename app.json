@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/info/info"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -33,7 +34,7 @@
         "selectedIconPath": "images/select_tabbar.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/info/info",
         "text": "转码申请",
         "iconPath": "images/unselect_tabbar.png",
         "selectedIconPath": "images/select_tabbar.png"

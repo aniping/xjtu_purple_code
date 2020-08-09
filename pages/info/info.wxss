@@ -1,0 +1,28 @@
+/* pages/info.wxss */
+
+.userpic_wrap{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 290rpx; */
+  width:200rpx;
+  margin-left: 275rpx;
+  background:rgb(85, 22, 168);
+}
+.dianwo{
+  position: absolute;
+}
+.head_img{
+  height: 270rpx;
+  width:200rpx;
+}
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+input{
+  height: 100rpx;
+  margin: 50rpx;
+}
